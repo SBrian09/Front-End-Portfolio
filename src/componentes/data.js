@@ -31,9 +31,9 @@ export const projectData = [
     },
     {
       id: 5,
-      title: 'Twitter UI Clone',
+      title: 'Codigo de esta pagina',
       description:
-        'Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.',
-      gitHubLink: 'https://github.com/olawanlejoel/TwitterUI-clone',
+        'Repositorio del codigo de esta pagina realizado con React y Next.js, alojado en GitHub.',
+      gitHubLink: 'https://github.com/SBrian09/Front-End-Portfolio.git',
     },
   ];
