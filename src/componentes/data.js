@@ -24,7 +24,7 @@ export const projectData = [
     },
     {
       id: 4,
-      title: 'Calculadora',
+      title: 'Codigo de Proyecto Calculadora',
       description:
         'Proyecto de calculadora realizado con las tecnologias React js, Css y JavaScript',
       gitHubLink: 'https://github.com/SBrian09/Calculadora.git',
