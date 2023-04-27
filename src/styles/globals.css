@@ -345,7 +345,7 @@ hr {
     height: 600px;
   }
 }
-@media screen and (min-width: 480px){
+@media screen and (max-width: 480px){
   .hero-container{
     height: auto;
   }
@@ -461,7 +461,7 @@ hr {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 480px){
+@media screen and (max-width: 480px){
   .color-blue{
     width: 40%;
     height: 50%;
