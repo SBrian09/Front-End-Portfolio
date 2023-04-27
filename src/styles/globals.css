@@ -465,6 +465,7 @@ hr {
   .color-blue{
     width: 40%;
     height: 50%;
+    margin-left: 0;
     top:1200px;
   }
 }
