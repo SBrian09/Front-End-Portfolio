@@ -362,6 +362,10 @@ hr {
     top: 260px;
     width: 360px;
   }
+  .hero-container .profile-img{
+    padding: 10px 10px 0 0;
+    top:50px
+  }
 }
 
 .hero-container .hero-text h2 {
@@ -482,12 +486,12 @@ hr {
   .color-blue{
     width: 80%;
     height: 50%;
-    left: 20px;
-    top:1490px;
+    left: 52px;
+    top:1500px;
   }
   .about-container{
     padding-top: 10%;
-    width: 90% !important;
+    width: 100% !important;
   }
   .about-text p {
     margin: 0 40px 0 40px;
@@ -828,7 +832,7 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45
   .NavBar_project{
     width: 80vw;
     left:12%;
-    padding-top: 30px;
+    padding-top:10px;
   }
   .NavBar_project a{
     font-size: 15px;
