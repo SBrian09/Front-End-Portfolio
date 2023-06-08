@@ -1,5 +1,53 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Mi portafolio
+
+Este es mi portafolio personal creado con React y Next.js. Muestra mis habilidades y proyectos de desarrollo web.
+
+## Instalación
+
+Para instalar y ejecutar este proyecto, siga estos pasos:
+
+## Clona este repositorio.
+
+``Instalar dependencias con npm install.
+
+Ejecute el servidor de desarrollo con npm run dev.``
+
+## Uso
+
+Para utilizar este portafolio, siga estos pasos:
+
+Abra el sitio web implementado.
+Navega por las diferentes secciones para conocer mis habilidades, proyectos e información de contacto.
+Tecnologías utilizadas
+Este portafolio fue construido utilizando las siguientes tecnologías:
+
+. React js
+. Next.js
+. CSS
+. HTML
+
+## Características
+
+Este portafolio incluye las siguientes características:
+
+. Sección Acerca de mí con CV, una biografía de mis conocimientos y mis skills.
+. Sección de proyectos con enlaces a aplicaciones implementadas y repositorios de GitHub correspondientes.
+. Sección de contacto para enviar por correo electrónico.
+
+## Ejemplos
+
+Aquí hay algunos ejemplos de mi trabajo que se muestran en este portafolio:
+
+Proyecto 1: [Enlace al repositorio de GitHub](https://github.com/SBrian09/Calculadora).
+
+Proyecto 2: [Enlace al repositorio de GitHub](https://github.com/SBrian09/porfolio-FrontEnd).
+
+Proyecto 3: [Enlace al repositorio de Github](https://github.com/SBrian09/portfolio-BackEnd).
+
+Proyecto 4: [Enlace del sitio web](https://front-end-portfolio-6f1o.vercel.app/).
+
 ## Getting Started
 
 First, run the development server:
