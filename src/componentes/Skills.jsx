@@ -2,6 +2,7 @@
 import {motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+
 const Skills = () => {
   
   const [ref, inView] = useInView({
@@ -18,7 +19,7 @@ const Skills = () => {
   };
 
     return (
-      <motion.div className="skills-container"
+      <motion.div className="skills-container" id="Skills"
         ref={ref}
         variants={sectionVariants}
         initial="hidden"

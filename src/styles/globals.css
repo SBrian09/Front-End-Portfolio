@@ -103,6 +103,7 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+    --icon-social: 155, 156, 157;
   }
   .project-card {
     border: 1px solid #e6e6e6;
@@ -149,7 +150,6 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  width: 900px;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -163,7 +163,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #DADADB;
+  color: rgb(var(--icon-social));
 }
 
 li {
@@ -253,15 +253,17 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.2) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,0.7) 100%);
 }
 .color-green{
   margin-top: -80px;
-  margin-right: 500px;
+  margin-right: 900px;
   height: 400px;
   width: 400px;
   background: green;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   filter: blur(30px);
   border-radius: 500px;
 }
@@ -269,7 +271,10 @@ hr {
   margin: 0px auto;
   padding-top: 80px;
   object-fit: cover;
-  animation: moveUpDown 2s ease-in-out infinite;  
+  animation: moveUpDown 2s ease-in-out infinite; 
+  position:relative;
+  z-index:2; 
+  left:5%;
 }
 @keyframes moveUpDown {
   0% {
@@ -317,6 +322,7 @@ hr {
   text-align: center;
   margin: 1rem 0;
   width: 80%;
+  padding:0 10% 0 10%;
 }
 
 @media screen and (max-width: 768px) {
@@ -349,6 +355,13 @@ hr {
   .hero-container{
     height: 70%;
   }
+  .hero-container .hero-text{
+    margin-top: 15%;
+  }
+  .color-green{
+    top: 260px;
+    width: 360px;
+  }
 }
 
 .hero-container .hero-text h2 {
@@ -372,7 +385,7 @@ hr {
 }
 
 .hero-container .social-icons a {
-  color: #9B9C9D;
+  color: rgb(var(--icon-social));
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -383,18 +396,21 @@ hr {
 /* About */
 .about-container {
   padding: 2rem 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(116,9,121,0.5) 50%, rgba(0,48,255,0.7) 100%);
 }
 
 .about-container h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  padding-left:2%;
+  margin:0 0 3rem 0;
 }
 
 .about-container .flex-about {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-left:2%;
   gap: 0 2rem;
 }
 
@@ -406,6 +422,7 @@ hr {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  padding-top:4%;
 }
 
 .about-container .flex-about .about-img {
@@ -464,25 +481,35 @@ hr {
 @media screen and (max-width: 480px){
   .color-blue{
     width: 90%;
-    height: 80%;
-    margin-left: 0;
-    top:1450px;
+    height: 70%;
+    margin-left: 10px;
+    top:1490px;
   }
   .about-container{
     padding-top: 0;
+    width: 100vw !important;
+  }
+  .about-text p {
+    margin: 0 20px 0 20px;
+  }
+  .about-img .profile-img{
+    margin-top: 40px;
   }
 }
 
 
 /* Skills */
 .skills-container {
-  padding: 2rem 0;
+  padding: 2rem 2rem 4rem 2rem;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45%, rgba(0,177,255,0.7) 100%);
 }
 
 .skills-container h2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  margin:2rem 0 3rem 0;
 }
 
 .skills-container .grid-skills {
@@ -516,52 +543,64 @@ hr {
 }
 
 .skills-container .grid-skills .html:hover {
-  background-color: #E34F26;
+  background-color: rgb(227, 79, 38);
+  box-shadow: 0 0 50px 0 rgb(227, 79, 38);
 }
 
 .skills-container .grid-skills .css:hover {
-  background-color: #264DE4;
+  background-color: rgb(38, 77, 228);
+  box-shadow: 0 0 50px 0 rgb(38, 77, 228);
 }
 
 .skills-container .grid-skills .js:hover {
-  background-color: #F7DF1E;
+  background-color: rgb(247, 223, 30);
+  box-shadow: 0 0 50px 0 rgb(247, 223, 30);
 }
 
 .skills-container .grid-skills .react:hover {
-  background-color: #61DAFB;
+  background-color: rgb(97, 218, 251);
+  box-shadow: 0 0 50px 0 rgb(97, 218, 251);
 }
 
 .skills-container .grid-skills .node:hover {
-  background-color: #339933;
+  background-color: rgb(51, 153, 51);
+  box-shadow: 0 0 50px 0 rgb(51, 153, 51);
 }
 
 .skills-container .grid-skills .angular:hover {
-  background-color: #ab3737;
+  background-color: rgb(171, 55, 55);
   color: white;
+  box-shadow: 0 0 50px 0 rgb(171, 55, 55);
 }
 .skills-container .grid-skills .bootstrap:hover {
-  background-color: #7737ab;
+  background-color: rgb(119, 55, 171);
   color: white;
+  box-shadow: 0 0 50px 0 rgb(119, 55, 171);
 }
 .skills-container .grid-skills .figma:hover {
-  background-color: #a97ecb;
+  background-color: rgb(169, 126, 203);
+  box-shadow: 0 0 50px 0 rgb(169, 126, 203);
 }
 .skills-container .grid-skills .typescript:hover {
-  background-color: #8fd7ec;
+  background-color: rgb(143, 215, 236);
+  box-shadow: 0 0 50px 0 rgb(143, 215, 236);
 }
 .skills-container .grid-skills .adobeXD:hover {
-  background-color: #3a1855;
+  background-color: rgb(58, 24, 85);
   color: white;
+  box-shadow: 0 0 50px 0 rgb(58, 24, 85);
 }
 /* Projects */
 .projects-container {
-  padding: 2rem 0;
+  padding: 2rem 2rem 4rem 2rem;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(13,206,191,0.4) 70%, rgba(239,0,255,0.6) 100%);
 }
 
 .projects-container h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin:2rem 0 3rem 0;
 }
 
 .projects-grid {
@@ -603,6 +642,7 @@ hr {
   margin-right: 5px;
   cursor: pointer;
   transition: all .5s ease;
+  font-size: 20px;
 }
 
 .project-card .small-icons a:hover {
@@ -617,13 +657,17 @@ hr {
 .project-card .project p {
   font-size: 16px;
   margin-bottom: 10px;
-  color: #b3b3b3;
+  color: #b25757;
 }
 @media screen and (max-width: 480px){
   .projects-container{
     padding: 0;
-    height: 1500px;
-    width: 300px;
+    height: 1450px;
+    width: 100%;
+  }
+  .projects-container h2{
+    margin-top: 0;
+    padding-top: 20px;
   }
 }
 /* contact */
@@ -654,4 +698,151 @@ hr {
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+/* navbar */
+
+ .NavBar_project{
+  width: 71%;
+  height: 22%;
+  background: #3b3b3b95;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 84%;
+  z-index: 100;
+  border-radius:10px 10px 0 0;
+  transition: all 0.3s ease-in-out;
+  clip-path: circle(100% at 50% 50%);
+  left:17%;
+}
+
+.NavBar_project nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.NavBar_project ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.NavBar_project li {
+  position: relative;
+  text-align:center;
+}
+
+.NavBar_project .bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #9b9b9b;
+  transition: all 0.3s ease-in-out;
+  z-index:-1;
+}
+
+.NavBar_project a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.NavBar_project li:hover a{
+  color: #000;
+}
+
+.NavBar_project li:hover .bubble {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: inflate 0.5s ease-in-out forwards;
+}
+
+.NavBar_project li:active .bubble {
+  animation: burst 0.2s ease-in-out forwards;
+}
+.icon-hamburger{
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  z-index: 101;
+  right:65vw;
+  top:18px;
+  cursor:pointer;
+}
+.desplace{
+  transition: all 0.3s ease-in-out;
+  top: 84%;
+  left:94%;
+}
+@keyframes inflate {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes burst {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    background-color: #fff;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(10);
+    background-color: #0d00ff;
+  }
+}
+
+.NavBar_project li:hover .NavBar_project {
+  clip-path: circle(100% at 50% 50%);
+}
+
+@media screen and (max-width: 480px){
+  body{
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+  svg{
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .NavBar_project{
+    width: 80vw;
+    left:12%;
+    padding-top: 30px;
+  }
+  .NavBar_project a{
+    font-size: 15px;
+  }
+  .NavBar_project li:hover .bubble {
+    background-color: transparent;
+  }
+  .NavBar_project li:hover a{
+    color: #fff200;
+  }
+  .desplace{
+    left:100%;
+  }
+  .icon-hamburger{
+    left:-50px;
+    background: rgb(72, 72, 72, 0.6);
+    border: solid 2px white;
+    height: 60px;
+    padding-top: 14px;
+  }
 }

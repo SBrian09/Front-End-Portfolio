@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo">
-        <Link href="/">
+        <Link href="/" style={{color:'white'}}>
           Portfolio Brian Sanchez
         </Link>
       </div>

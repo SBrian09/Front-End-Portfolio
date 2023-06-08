@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
-
+  
   const [ref, inView] = useInView({
     threshold:0.5,
     triggerOnce:true,
@@ -21,12 +21,13 @@ const Hero = () => {
   };
 
   return (
-    <motion.div  className="hero-container"
+    <motion.div  className="hero-container" id='Hero'
         ref={ref}
         variants={sectionVariants}
         initial="hidden"
         animate={inView ? "visible": "hidden"}
         transition={sectionTransition}>
+
       <Image src={fondo1} className="profile-img" width={400} height={400} alt="fondo de hero" />
       <div className='color-green'></div>
       <div className="hero-text">

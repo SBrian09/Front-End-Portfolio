@@ -17,7 +17,7 @@ const Contact = () => {
     ease:"easeInOut",
   };
     return (
-      <motion.div className="contact-container"
+      <motion.div className="contact-container" id="Contact"
         ref={ref}
         variants={sectionVariants}
         initial="hidden"

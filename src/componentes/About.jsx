@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import imagen1 from "../imagen/Persona-programando.png"
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
@@ -21,8 +21,7 @@ const About = () => {
     };
 
   return (
-    
-    <motion.div className="about-container" 
+    <motion.div className="about-container" id="About"
         ref={ref}
         variants={sectionVariants}
         initial="hidden"
@@ -51,6 +50,7 @@ const About = () => {
           <Image src={imagen1} className="profile-img" width={300} height={500} alt="imagen-profile"/>
         </div>
         <div className="color-blue"></div>
+        
       </div>
     </motion.div>
   )

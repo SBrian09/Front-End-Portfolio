@@ -5,11 +5,12 @@ import About from '@/componentes/About';
 import Skills from '@/componentes/Skills';
 import Projects from '@/componentes/Projects';
 import Contact from '@/componentes/Contact';
+import Navbar from '@/componentes/NavBar2';
+
 
 import Head from 'next/head';
 
 import { ThemeProvider } from 'next-themes';
-
 
 
 const Home = () => {
@@ -22,6 +23,8 @@ const Home = () => {
         <link rel="icon" href="" />
       </Head>
       <div>
+      
+      <Navbar />
       <ThemeProvider>
         <Hero />
         <About />

@@ -19,7 +19,7 @@ const Projects = () => {
   };
 
   return (
-    <motion.div className="projects-container"
+    <motion.div className="projects-container" id='Projects'
         ref={ref}
         variants={sectionVariants}
         initial="hidden"
