@@ -464,6 +464,9 @@ hr {
   .about-container .flex-about {
     flex-direction: column;
   }
+  .about-container{
+    display: block;
+  }
 
   .about-container .flex-about .about-text {
     width: 100%;
