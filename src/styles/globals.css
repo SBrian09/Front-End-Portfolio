@@ -498,13 +498,13 @@ hr {
   .about-container{
     padding-top: 0%;
     width: 100% !important;
-    height: 190dvh !important;
+    height: 180dvh !important;
   }
   .about-text p {
     margin: 0 10px 0 10px;
   }
   .about-img .profile-img{
-    margin: 40px 0 0 20px;
+    margin: 40px 20px 0 20px;
     width: 90% !important;
     height: 90% !important;
   }
