@@ -12,7 +12,7 @@ const About = () => {
       triggerOnce:true,
     });
     const sectionVariants = {
-      hidden:{opacity: 1, x: 0},
+      hidden:{opacity: 0, x: 50},
       visible:{opacity: 1, x: 0 },
     }
     const sectionTransition = {
@@ -20,16 +20,19 @@ const About = () => {
       ease:"easeInOut",
     };
 
+  
+
   return (
-    <motion.div className="about-container" id="About"
+    <div className="about-container" id="About">
+      <h2>Acerca de mi</h2>
+      
+      <motion.div className="flex-about"
         ref={ref}
         variants={sectionVariants}
         initial="hidden"
         animate={inView ? "visible": "hidden"}
         transition={sectionTransition}
     >
-      <h2>Acerca de mi</h2>
-      <div className="flex-about">
         <div className="about-text">
           <p>
           Como desarrollador, siempre me ha apasionado crear soluciones elegantes y efectivas 
@@ -50,9 +53,9 @@ const About = () => {
           <Image src={imagen1} className="profile-img" width={300} height={500} alt="imagen-profile"/>
         </div>
         <div className="color-blue"></div>
-        
-      </div>
-    </motion.div>
+        </motion.div>  
+      
+    </div>
   )
 }
 

@@ -360,7 +360,8 @@ hr {
   }
   .color-green{
     top: 260px;
-    width: 360px;
+    left: 30px;
+    width:80%;
   }
   .hero-container .profile-img{
     padding: 10px 10px 0 0;
@@ -431,10 +432,11 @@ hr {
 
 .about-container .flex-about .about-img {
   width: 50%;
+  flex: 1;
 }
 
 .about-container .flex-about .about-img .profile-img {
-  overflow: hidden;
+  overflow:hidden;
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -442,6 +444,7 @@ hr {
   filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
   cursor: cell;
+  grid-column: 2 / 3;
 }
 
 .about-container .flex-about .about-img .profile-img:hover {
@@ -490,21 +493,24 @@ hr {
     width: 80%;
     height: 50%;
     left: 52px;
-    top:1500px;
+    top:1600px;
   }
   .about-container{
-    padding-top: 10%;
+    padding-top: 0%;
     width: 100% !important;
+    height: 190dvh !important;
   }
   .about-text p {
-    margin: 0 40px 0 40px;
+    margin: 0 10px 0 10px;
   }
   .about-img .profile-img{
-    margin-top: 40px;
-    
-  }
-  .profile-img{
+    margin: 40px 0 0 20px;
     width: 90% !important;
+    height: 90% !important;
+  }
+  .about-container .flex-about .about-text p {
+    font-weight: 500;
+    font-size: 1.2rem;
   }
 }
 
@@ -675,6 +681,10 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45
     padding: 0;
     height: 1450px;
     width: 100%;
+  }
+  .projects-grid{
+    width: 100dvw;
+    height: 100dvh;
   }
   .projects-container h2{
     margin-top: 0;

@@ -10,7 +10,7 @@ const Projects = () => {
     triggerOnce:true,
   });
   const sectionVariants = {
-    hidden:{opacity: 1, x: 0},
+    hidden:{opacity: 0, x: -50},
     visible:{opacity: 1, x: 0 },
   }
   const sectionTransition = {
@@ -19,14 +19,15 @@ const Projects = () => {
   };
 
   return (
-    <motion.div className="projects-container" id='Projects'
+    <div className="projects-container" id='Projects'>
+      <h2>Projects</h2>
+      <motion.div className="projects-grid"
         ref={ref}
         variants={sectionVariants}
         initial="hidden"
         animate={inView ? "visible": "hidden"}
         transition={sectionTransition}>
-      <h2>Projects</h2>
-      <div className="projects-grid">
+
         {projectData && projectData.map((project) => (
           <div className="project-card" key={project.id}>
             <div className="project-header">
@@ -40,8 +41,8 @@ const Projects = () => {
           </div>
         ))
         }
-      </div>
     </motion.div>
+    </div>
   )
 }
 
