@@ -513,6 +513,32 @@ hr {
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .color-blue{
+    opacity: 0;
+  }
+  .about-container{
+    padding-top: 0%;
+    width: 100% !important;
+    height: 240vh !important;
+  }
+  .flex-about{
+    width: 100% !important;
+    height:90vh !important;
+  }
+  .about-text p {
+    margin: 0 10px 0 10px;
+  }
+  .about-img .profile-img{
+    margin: 40px 20px 0 20px;
+    width: 90% !important;
+    height: 90% !important;
+  }
+  .about-container .flex-about .about-text p {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}
 
 
 /* Skills */
@@ -538,6 +564,11 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45
 @media screen and (max-width: 768px) {
   .skills-container .grid-skills {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 360px) {
+  .skills-container .grid-skills {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -664,6 +695,11 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45
 .portfolio-container {
   height: 3800px;
 }
+}
+@media screen and (max-width: 360px) {
+  .portfolio-container {
+    height: 3150px;
+  }
 }
 /* Projects */
 .projects-container {
