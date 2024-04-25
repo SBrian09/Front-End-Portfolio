@@ -25,6 +25,22 @@ const Footer = () => {
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
+            <a
+            href="https://www.behance.net/briansanchez33"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-behance"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/sbrian09/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-instagram"></i>
+          </a>
           </div>
         </div>
       </>

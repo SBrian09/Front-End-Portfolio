@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaHome, FaUser, FaCode, FaFolderOpen, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUser, FaCode, FaFolderOpen, FaEnvelope, FaBookOpen } from 'react-icons/fa';
 import { CiMenuBurger, CiCircleChevRight } from "react-icons/ci";
 import React, { useState } from 'react';
 
@@ -37,6 +37,13 @@ const Navbar = () => {
           <Link href="#Skills">
           <FaCode style={{ width: '50px', height: '50px' }} />
             Skills
+          </Link>
+        </li>
+        <li>
+        <div className="bubble"></div>
+          <Link href="#Portfolio">
+          <FaBookOpen style={{ width: '50px', height: '50px' }} />
+            Portfolio
           </Link>
         </li>
         <li>

@@ -6,6 +6,7 @@ import Skills from '@/componentes/Skills';
 import Projects from '@/componentes/Projects';
 import Contact from '@/componentes/Contact';
 import Navbar from '@/componentes/NavBar2';
+import Portfolio from '@/componentes/Portfolio';
 
 
 import Head from 'next/head';
@@ -29,6 +30,7 @@ const Home = () => {
         <Hero />
         <About />
         <Skills />
+        <Portfolio />
         <Projects />
         <Contact />
       </ThemeProvider>

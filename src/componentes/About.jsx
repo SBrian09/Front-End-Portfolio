@@ -35,19 +35,21 @@ const About = () => {
     >
         <div className="about-text">
           <p>
-          Como desarrollador, siempre me ha apasionado crear soluciones elegantes y efectivas 
-          para problemas complejos. Tengo una base sólida en el diseño y el desarrollo de software, 
-          con un enfoque en tecnologías web como HTML, CSS y JavaScript. Me gusta trabajar tanto en 
-          el front-end de las aplicaciones, y siempre estoy buscando formas de optimizar el rendimiento, 
-          mejorar la experiencia del usuario y garantizar el más alto nivel de calidad del código.
+          ¡Hola! Soy Brian Sánchez, un apasionado del diseño gráfico, vivo en General San Martin, Gran Buenos Aires (GBA), 
+          Argentina. Aunque no tengo experiencia laboral formal, cuento con una sólida formación en diseño 
+          gráfico y una amplia gama de habilidades técnicas.Me gradué de un curso de diseño gráfico donde 
+          adquirí competencias en herramientas como Photoshop, Illustrator, After Effects, Premiere Pro, 
+          Corel Draw y Figma. Además, tengo conocimientos en desarrollo web y diseño UX, lo que me permite 
+          comprender la importancia de la funcionalidad y la experiencia del usuario en cada proyecto en el 
+          que trabajo.Mi enfoque se centra en combinar la creatividad con un enfoque estratégico para encontrar 
+          soluciones innovadoras y funcionales a los desafíos de diseño. Soy un aprendiz rápido y me mantengo 
+          actualizado sobre las últimas tendencias y tecnologías en diseño gráfico y multimedia a través de videos,
+           tutoriales y proyectos personales.Estoy buscando oportunidades para aplicar mis habilidades y 
+           conocimientos en agencias de diseño, empresas de tecnología y startups en el GBA. Estoy comprometido 
+           con el aprendizaje continuo y estoy emocionado por la oportunidad de contribuir al éxito de equipos 
+           creativos y dinámicos.<br/>¡Espero tener la oportunidad de trabajar juntos y hacer una diferencia en el 
+           mundo del diseño gráfico!
           </p>
-          <p>A lo largo de mi carrera(estudios), he trabajado en desarrollar algunos proyectos, 
-            desde simples sitios web estáticos hasta web mas dinamicas y complejas de nivel 
-            empresarial. Tengo experiencia trabajando con una variedad de herramientas 
-            y marcos de desarrollo, incluidos React, Angular, Vue.js y Node.js. 
-            Siempre estoy ansioso por aprender y explorar nuevas tecnologías, y estoy 
-            constantemente buscando oportunidades para mejorar mis habilidades y 
-            conocimientos.</p>
         </div>
         <div className="about-img">
           <Image src={imagen1} className="profile-img" width={300} height={500} alt="imagen-profile"/>

@@ -421,13 +421,13 @@ hr {
 
 .about-container .flex-about .about-text {
   width: 50%;
+  line-height: 1.8;
 }
 
 .about-container .flex-about .about-text p {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  padding-top:4%;
 }
 
 .about-container .flex-about .about-img {
@@ -493,7 +493,7 @@ hr {
     width: 80%;
     height: 50%;
     left: 52px;
-    top:1600px;
+    top:2000px;
   }
   .about-container{
     padding-top: 0%;
@@ -558,6 +558,25 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45
 .skills-container .grid-skills i {
   font-size: 1.5rem;
 }
+.skills-container .grid-skills .premiere:hover {
+  background-color: rgb(227, 38, 217);
+  box-shadow: 0 0 50px 0 rgb(227, 38, 217);
+}
+.skills-container .grid-skills .after:hover {
+  color: white;
+  background-color: rgb(132, 38, 227);
+  box-shadow: 0 0 50px 0 rgb(139, 38, 227);
+}
+.skills-container .grid-skills .illustrator:hover {
+  background-color: rgb(227, 151, 38);
+  box-shadow: 0 0 50px 0 rgb(227, 151, 38);
+}
+
+.skills-container .grid-skills .photoshop:hover {
+  background-color: rgb(57, 38, 227);
+  color: white;
+  box-shadow: 0 0 50px 0 rgb(60, 38, 227);
+}
 
 .skills-container .grid-skills .html:hover {
   background-color: rgb(227, 79, 38);
@@ -606,6 +625,45 @@ background: linear-gradient(90deg, rgba(2,0,36,0.2) 10%, rgba(13,206,110,0.5) 45
   background-color: rgb(58, 24, 85);
   color: white;
   box-shadow: 0 0 50px 0 rgb(58, 24, 85);
+}
+/* Portfolio */
+.portfolio-container {
+  height: 8300px;
+  padding: 2rem 2rem 4rem 2rem;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(13,206,191,0.4) 70%, rgba(239,0,255,0.6) 100%);
+}
+.portfolio-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin:2rem 0 3rem 0;
+}
+.portfolio-container .flex-portfolio {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  gap: 0 2rem;
+}
+
+.portfolio-grid {
+  display: grid;
+
+  gap: 20px;
+}
+
+.portfolio-item {
+  padding: 0 0 0 0;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 480px) {
+.portfolio-container {
+  height: 3800px;
+}
 }
 /* Projects */
 .projects-container {

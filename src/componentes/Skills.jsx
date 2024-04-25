@@ -1,6 +1,12 @@
 // components/Skills.jsx
 import {motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeillustrator } from "react-icons/si";
+import { SiAdobeaftereffects } from "react-icons/si";
+import { SiAdobepremierepro } from "react-icons/si";
+import { SiAdobexd } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 
 
 const Skills = () => {
@@ -27,6 +33,22 @@ const Skills = () => {
         transition={sectionTransition}>
         <h2>Skills</h2>
         <div className="grid-skills">
+          <div className="skill-card photoshop">
+            <SiAdobephotoshop />
+            <p>Photoshop</p>
+          </div>
+          <div className="skill-card illustrator">
+            <SiAdobeillustrator />
+            <p>Illustartor</p>
+          </div>
+          <div className="skill-card after">
+            <SiAdobeaftereffects />
+            <p>Afeter Effects</p>
+          </div>
+          <div className="skill-card premiere">
+            <SiAdobepremierepro />
+            <p>Premiere Pro</p>
+          </div>
           <div className="skill-card html">
             <i className="fa-brands fa-html5 html-icon"></i>
             <p>HTML</p>
@@ -60,11 +82,11 @@ const Skills = () => {
             <p>Figma</p>
           </div>
           <div className="skill-card typescript">
-            <i className="fa-brands fa-typescript typescript-icon"></i>
+            <SiTypescript />
             <p>Typescript</p>
           </div>
           <div className="skill-card adobeXD">
-            <i className="fa-brands fa-adobeXD AdobeXD-icon"></i>
+            <SiAdobexd />
             <p>Adobe XD</p>
           </div>
         </div>

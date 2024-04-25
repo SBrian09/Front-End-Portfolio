@@ -33,8 +33,9 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Hola, Me Llamo Brian <span className='mano'>👋</span></h1>
         <div>
-        <Typewriter text="Yo soy un Desarrollador Front-End Jr de Buenos Aires, Argentina. Me especializo en construir y diseñar
-          sitios web excepcionales." /> 
+        <Typewriter text="Yo soy un diseñador gráfico. Pero tambien soy un desarrollador Front-End Jr y 
+        tengo conocimientos en diseño UX. Soy de Buenos Aires, Argentina. Me especializo en construir y diseñar 
+        imagenes creativas y con comunicación efectiva, ademas de sitios web excepcionales." /> 
         </div>
         <div className="social-icons">
           <a
@@ -52,6 +53,22 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <i className="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.behance.net/briansanchez33"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-behance"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/sbrian09/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
