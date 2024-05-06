@@ -20,7 +20,7 @@ const Navbar = () => {
           Portfolio Brian Sanchez
         </Link>
       </div>
-      <Link className="cta-btn" href="/CV-Diseño-Gráfico-Brian-Sanchez.pdf" >Descargar CV</Link>
+      <Link className="cta-btn" href="/CV-Diseño-Gráfico-Brian-Sanchez-(2).pdf" >Descargar CV</Link>
       <div>
       <button className="cta-btn" onClick={toggleTheme}>Modo { colorTheme }</button>
       </div>
